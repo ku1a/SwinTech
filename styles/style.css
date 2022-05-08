@@ -1,0 +1,381 @@
+/* 
+filename: style.css
+author: Tony Lam
+created: 30/03/2019
+last modified: 30/03/2019, approx. 4:55pm
+description: Cascading Style Sheet for Assignment 1, linking to Index, Jobs, Apply, and About html pages. Enhancements are a WIP.
+*/
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+/* Global Elements / All pages: */
+
+* {
+    color: rgb(255, 255, 255);
+}
+
+body {  
+    Background-color: rgb(71, 76, 117);
+}
+
+/* Header <h1>, Navigation <nav> and Footer <footer>. (They appear on all pages) */
+header {
+    text-align:center;
+    background-image: url("images/architectural.jpg");
+    word-spacing: 5px;
+    font: 25px Arial, sans-serif;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid white
+}
+
+nav {   
+    text-align: Center;
+    background-color: rgb(52, 48, 70);
+    padding: 5px;
+    font: 20px Arial, sans-serif;
+}
+
+/* Space between each <a>anchor</a> item in the navigation menu */
+nav a {
+    margin-left: 5px;
+    margin-right: 5px
+}
+
+/* Footer */
+footer {
+    bottom: 0;
+    padding: 0px;
+    background-color:  rgb(52, 48, 70);
+    position: fixed;
+    width: 100%; 
+    text-align: center; 
+}
+footer p {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* hyperlinks <a> pseudo-class */
+a:link {
+    color: white
+}
+a:visited {
+    color: grey
+}
+a:hover {
+    color: orangered
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+/* Index.html */
+
+.sectionindex {
+    padding: 20px;
+    border: 3px solid white;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 90px;
+    margin-bottom: 100px;
+} 
+/* Title of section */
+.sectionindex h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-decoration: underline white;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* picture */
+.sectionindex img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 4px dotted cyan;
+    max-width: 100%;
+    height: auto;
+}
+
+/* paragraph */
+.sectionindex p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;   
+    word-spacing: 2px; 
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+/* apply.html */
+.formsection {
+    font-family: Arial, Helvetica, sans-serif; 
+    margin-left: auto;
+    margin-right: auto;
+    height: 800px;
+    width: 400px;
+    max-height: 100%;
+}
+
+/* Submit and reset buttons */
+.formsection .button {
+    color: black;
+    margin: 30px;
+    margin-bottom: 100px;
+    font: bold 20px arial, sans-serif;
+    display: inline;
+}
+
+/* Job Reference number at the top */
+.formsection #jobnumber {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+/* The labels that appear next to form entries */
+.formsection label {
+    font-size: 15px;
+    color: rgb(255, 212, 133);
+    display: block;
+}
+
+/* Legend that runs along boxes */
+.formsection legend {
+    font-size: 20px;
+    color: rgb(255, 173, 126);
+}
+
+/* Form entries, including Select element and textarea */
+.formsection input {
+    display: inline-block;
+    margin: 5px;
+    color: black;
+}
+/* Alternative solution is to add class or id to child elements part of input then color them all at once */
+.formsection select {
+    color: black;
+}
+
+.formsection option {
+    color: black;
+}
+
+.formsection textarea {
+    color: black;
+}
+
+/* General Fieldset (boxes that encompass input elements) */
+fieldset {
+    background-color: #233d5c;
+}
+
+.formsection div {
+    color: red;
+    padding: 0px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+/* about.html */
+
+/* Background Information */
+
+/* aligning defintion items to be in one line */
+
+dl {
+    width: 40%;
+    overflow: hidden;
+    padding: 10px;
+    margin: 0;
+    float: left;
+    font-size: 20px;
+    border: 2px solid #fff;
+    border-right: hidden;
+    background-color: #233d5c;
+    max-width: 100%;
+}
+dt {
+    float: left;
+    width: 40%;
+    padding: 0;
+    margin: 0;
+    color:  rgb(255, 212, 133);
+}
+dd {
+    float: left;
+    width: 40%;
+    padding: 0;
+    margin: 0;
+}
+
+/* Heading changes */
+.aboutsection h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 173, 126);
+    font-size: 30px;
+}
+
+/* Figure/Picture needs to be set floating right */
+.aboutsection {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    margin: auto;
+}
+section.aboutsection img {
+    border: 10px dashed #fff;
+    float: right;
+    margin: auto;
+}
+
+/* The TABLE, adding background color (hexa format) to cells, and bolding the headers */
+section#tablestuff {
+    clear: left;
+    clear: right;
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 80px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* Header on top of Table changed */
+#tablestuff h2{
+    font: bold 30px arial, sans-serif;
+    color: #ffad7e;
+    text-align:center;
+    text-decoration: underline;
+}
+
+/* Adding background color to cells, added border to table */
+#tablestuff table, td, th {
+    border: 2px solid #fff;
+    background-color: #233d5c
+}
+
+/* Table headers bolded */
+#tablestuff th {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+/* Jobs.html: There are 2 Sections with an <aside> in each.
+Both sections are different jobs, the <asides> are Key responsibilities */
+
+
+/* .NET Developer Section: Details left, Attributes Right. */
+
+
+section#netdeveloper {
+    margin: auto;
+    padding: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section#netdeveloper aside {
+    float: right;
+    Margin: auto;
+    width: 25%;
+    border: 4px solid white;
+    background-color: rgb(133, 98, 45);
+    padding: 20px;
+}
+
+section#netdeveloper aside img{
+    width:50%;
+    margin-left: 30px;
+    margin-right: auto;
+    border: 3px solid white;
+}
+
+section#netdeveloper #netdescription {
+    float: left;
+    margin: auto;
+    padding: 10px;
+    width: 40%;
+    font-size: 25px;
+} 
+
+/* Targets both salaries */
+#salarynet {
+    padding-top: 20px;
+    clear: left;
+    width: 50%;
+    font-size: 20px;
+}
+
+#salaryfront {
+    padding-top: 20px;
+    clear: left;
+    width: 50%;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+section#frontend {
+    margin: auto;
+    padding: 100px;
+    clear:left;
+    clear:right;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 100px;
+    padding-bottom: 200px;
+}
+
+section#frontend aside {
+    float: right;
+    Margin: auto;
+    margin-bottom: 40px; 
+    width: 25%;
+    border: 4px solid white;
+    background-color: rgb(133, 98, 45);
+    padding: 20px;
+}
+section#frontend #frontdescription {
+    float: left;
+    margin: auto;
+    padding: 10px;
+    width: 40%;
+    font-size: 25px;
+} 
+
+/* jobs.html body */
+body.jobscontrol h2{
+    text-align: center;
+    color: #ffad7e;
+    text-decoration: underline;
+    word-spacing: 5px;
+    font-size: 40px;
+}
+
+/* Source elements */
+.source {
+    color: yellow;
+}
+
+.jobscontrol .applynow {
+    background-color: darkblue;
+    border: 2px solid white;
+    padding: 2px;
+}
+
+form.manage input, select{
+    color: black;
+}
+
+form.changer input, select{
+    color: black;
+    margin-bottom: 80px;
+}
+
+form.delete input, select{
+    color: black;
+}
+
